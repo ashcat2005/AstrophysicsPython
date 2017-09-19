@@ -10,8 +10,6 @@ v/c.
 
 """
 
-import string
-import numpy as np
 import math as m
 
 # open the file to write the results
@@ -24,19 +22,16 @@ def gamma (v):
     g = 1/m.sqrt(1-v**2)
     return g
 
-
-
-
-
-step = 1000
+# Number of steps in the calculation of the Lorentz Gamma Function
+steps = 10000
 
 # Write the Header
 outfile.write("Beta (v/c)\t Gamma \n")
 
 #Print the value of the Lorentz Gamma Function for values  0 < beta < 1 
-# in step steps
-for i in range(step):
-    beta = 0. + i/step
+# in steps steps
+for i in range(steps):
+    beta = 0. + i/steps
     g = gamma(beta)
     outstring = "%g" %beta + "\t\t %.6g \n" % g
     outfile.write(outstring)
