@@ -55,5 +55,9 @@ for i in range(n):
     data[i] = float(splitline[1])   
     
     
-# Plot data as ro (red o)  bt (blue triangles) gs(green squares) etc
-pl.plot(time , data, 'gs')
+# Plot data as ro (red o)  b^ (blue triangles) gs(green squares) etc
+pl.plot(time , data, 'r^')
+
+# Plot Labels
+pl.xlabel('v/c')
+pl.ylabel('gamma')
