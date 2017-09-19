@@ -6,7 +6,7 @@ Created on Thu Aug 17 18:30:41 2017
 @author: ashcat
 
 Calculates the Lorentz Gamma function for a list of values of normalized velocity 
-v/c.
+v/c and store these values in the file LorentzGamma.txt
 
 """
 
